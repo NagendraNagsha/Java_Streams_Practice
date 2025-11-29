@@ -13,14 +13,6 @@ Sorting, thresholding, and custom logic (e.g., balance calculation treating with
 
 Method references and collectors like groupingBy, summingDouble, toList.
 
-Files Structure
-File	Description	Key Elements
-Transaction.java	POJO for transactions with id, type, amount, date, accountId. Includes equals/hashCode/toString. ​	Getters/setters, LocalDateTime support.
-TransactionType.java	Enum defining DEPOSIT and WITHDRAWAL. ​	Simple two-value enum.
-Practice.java	Main class with sample data and 10+ stream methods. ​	Demonstrates filterTransaction, totalBalancePerAccount, sortTxnByAmount, etc.
-Setup and Running
-Clone the repository: git clone https://github.com/NagendraNagsha/Java_Streams_Practice.git.
-
 Compile: javac streams/*.java.
 
 Run: java streams.Practice. Outputs totals, filtered lists, groupings, balances, and sorted results for sample data.​
