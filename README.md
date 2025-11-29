@@ -28,3 +28,10 @@ Group by type/account with totals/counts (e.g., sumOfTxnTypePerCustomer).​
 Sort descending by amount; filter above threshold.​
 
 Account balances (deposits positive, withdrawals negative).
+
+
+Code Structure
+- streams/
+  - Transaction.java: Model class for transactions.
+  - TransactionType.java: Enum for transaction types (DEPOSIT, WITHDRAWAL).
+  - Practice.java: Main class demonstrating various stream operations.
