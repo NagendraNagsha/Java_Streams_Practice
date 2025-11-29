@@ -1,4 +1,5 @@
-Java Streams Practice Project
+# Java Streams Practice Project
+
 This project demonstrates Java 8+ Stream API operations using a banking transaction model for hands-on practice.​
 
 Project Overview
