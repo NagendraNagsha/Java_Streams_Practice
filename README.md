@@ -1,42 +1,37 @@
-# Java_Streams_Practice
-Problems to Practice Java Stream Basic Concepts
+Java Streams Practice Project
+This project demonstrates Java 8+ Stream API operations using a banking transaction model for hands-on practice.​
 
 Project Overview
-A brief description of the purpose of the project such as practicing Java 8 Stream API concepts through different coding exercises.
+The repository contains practical exercises for mastering Java Streams through transaction processing scenarios. Core files include Transaction.java (model class), TransactionType.java (enum), and Practice.java (main demonstration class with multiple stream examples). Sample data includes four transactions across two accounts (A1, A2) with deposit and withdrawal types.​
 
-Features
-Demonstrates various Stream operations such as filter, map, reduce, collect, and more.
+Key Features
+Basic stream operations: filter, mapToDouble, sum, max.
 
-Contains practice code snippets for common stream use cases.
+Grouping and aggregation: by transaction type, account, nested maps for type counts and sums.
 
-Includes examples on working with collections, custom objects, and data transformations.
+Sorting, thresholding, and custom logic (e.g., balance calculation treating withdrawals as negative).
 
-Requirements
-Java 8 or higher installed.
+Method references and collectors like groupingBy, summingDouble, toList.
 
-Maven/Gradle for dependency management (if applicable).
+Files Structure
+File	Description	Key Elements
+Transaction.java	POJO for transactions with id, type, amount, date, accountId. Includes equals/hashCode/toString. ​	Getters/setters, LocalDateTime support.
+TransactionType.java	Enum defining DEPOSIT and WITHDRAWAL. ​	Simple two-value enum.
+Practice.java	Main class with sample data and 10+ stream methods. ​	Demonstrates filterTransaction, totalBalancePerAccount, sortTxnByAmount, etc.
+Setup and Running
+Clone the repository: git clone https://github.com/NagendraNagsha/Java_Streams_Practice.git.
 
-IDE such as IntelliJ IDEA or Eclipse recommended.
+Compile: javac streams/*.java.
 
-How to Run
-Instructions for running the project or individual code examples, e.g.,
+Run: java streams.Practice. Outputs totals, filtered lists, groupings, balances, and sorted results for sample data.​
 
-Clone the repository.
+Stream Examples Covered
+Total deposits/withdrawals via filter + sum.​
 
-Import into your IDE.
+Highest amount using map + max.​
 
-Run the main classes or unit tests demonstrating stream usage.
+Group by type/account with totals/counts (e.g., sumOfTxnTypePerCustomer).​
 
-Sample Stream Operations
-Filtering lists based on conditions.
+Sort descending by amount; filter above threshold.​
 
-Mapping and transforming data.
-
-Aggregating data with collect and reduce.
-
-Sorting and distinct operations.
-
-Working with Optional and flatMap.
-
-Contribution
-Guidelines on how to contribute new exercises or improvements.
+Account balances (deposits positive, withdrawals negative).
