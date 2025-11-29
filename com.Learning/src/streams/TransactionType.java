@@ -1,4 +1,6 @@
 package streams;
 
-public class TransactionType {
+public enum TransactionType {
+    DEPOSIT,
+    WITHDRAWAL
 }
